@@ -21,10 +21,10 @@ jobs:
         with:
           name: webpack artifacts
           path: public/
-    - name: npm install and build webpack
-      run: |
-        npm install
-        npm run build  
+      - name: npm install and build webpack
+        run: |
+          npm install
+          npm run build  
   test:
     runs-on: ubuntu-latest
     strategy:
